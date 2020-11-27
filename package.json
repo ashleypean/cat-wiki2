@@ -4,15 +4,16 @@
   },
 
   "scripts": {
-    "start": "yarn start --prefix client",
+    "start": "node server.js",
     "client-install": "yarn install --prefix client", 
-    "server": "nodemon server/server.js", 
+    "server": "nodemon server.js", 
     "client": "yarn start --prefix client", 
     "dev": "concurrently \"yarn run server\" \"yarn run client\"", 
-    "heroku-postbuild": "YARN_PRODUCTION=true yarn install --prefix client && yarn run build --prefix client"
+    "heroku-postbuild": "YARN_PRODUCTION=false yarn install --prefix client && yarn run build --prefix client"
   }, 
   "engines": {
     "node": "14.15.1",
     "npm": "6.14.9"
-}
+},
+  "license": "MIT"
 }
