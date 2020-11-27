@@ -126,7 +126,7 @@ ul.names-list li:hover {
 @media screen and (min-width: 700px) {
   div.header {
     height: auto;
-    background: center / cover url('../../img/header-md.png') no-repeat;
+    background: center / cover url('../../../img/header-md.png') no-repeat;
     padding: 3rem 2rem 2rem;
   }
 
@@ -152,7 +152,7 @@ ul.names-list li:hover {
     height: auto;
     padding: 3rem 2rem 5rem 3rem;
     max-width: 1000px;
-    background: center / cover url('../../img/header-lg.png') no-repeat;
+    background: center / cover url('../../../img/header-lg.png') no-repeat;
   }
 }
 
