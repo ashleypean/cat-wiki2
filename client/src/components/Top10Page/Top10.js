@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import Header from './Header/Header.jsx'
-import {ReactComponent as Logo} from '../../img/logo.svg'
+import Logo from '../../img/logo.svg'
 import Description from './Description/Description.jsx'
 import LoadingPage from '../Loading/Loading.jsx'
 
