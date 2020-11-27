@@ -5,8 +5,6 @@ const path = require('path')
 
 const app = express()
 
-const PORT = 3001
-
 //Default AXIOS settings - Alllow cors and enable API key
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -156,6 +154,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname+'/client/public/index.html'))
 })
 
-app.listen(process.env.PORT || PORT, () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log(`Listening on port ${PORT}`)
 })
