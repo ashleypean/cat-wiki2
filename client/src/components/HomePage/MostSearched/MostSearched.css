@@ -157,7 +157,7 @@ div.most-searched div.article-images div img:hover {
 
 @media screen and (min-width: 1810px) {
   div.most-searched {
-    max-width: calc(1000px + 3rem);
+    max-width: calc(1000px);
   }
 }
 
