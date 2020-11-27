@@ -88,14 +88,12 @@ export default function Header(props) {
           <div className="names-list hidden">
             <ul className="names-list hidden">
               {tempNames.map((name, index) => {
-                const searchString = `/breeds/search/${name}`
+                const searchString = `https://cat-wikis.herokuapp.com//breeds/search/${name}`
                 return (
                   <Link to={searchString}>
                     <li key={index}> {name} </li>
                   </Link>
-                )
-               }
-              )}
+                )})}
             </ul>
           </div>
         </form>
