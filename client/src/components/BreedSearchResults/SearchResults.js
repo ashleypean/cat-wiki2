@@ -1,7 +1,7 @@
 
 import React, {useState, useEffect} from 'react'
 import { Link, useParams } from 'react-router-dom'
-import {ReactComponent as Logo} from '../../img/logo.svg'
+import Logo from '../../img/logo.svg'
 import BreedSummary from './BreedSummary/BreedSummary.jsx'
 import OtherPhotos from './OtherPhotos/OtherPhotos.jsx'
 import LoadingPage from '../Loading/Loading.jsx'
