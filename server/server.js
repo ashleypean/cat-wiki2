@@ -2,6 +2,7 @@ const express = require('express')
 const axios = require('axios')
 require('dotenv').config()
 const path = require('path')
+const port = process.env.PORT || 5000
 
 const app = express()
 
@@ -137,23 +138,17 @@ async function(req, res) {
   res.status(200).send({top4, names})
 })
 
-if(process.env.NODE_ENV === 'production') {
-  app.use(express.static())
-}
 
-app.use(express.static(path.join(__dirname, 'client/build')))
-
+//Server static assets if in production 
 if(process.env.NODE_ENV === 'production') {  
-  app.use(express.static(path.join(__dirname, 'client/build')));  
+  //Set static folder 
+  app.use(express.static('client/build'));  
   app.get('*', (req, res) => {    
-    res.sendFile(path.join(__dirname = 'client/build/index.html'));  
+    res.sendFile(path.resolve(__dirname , 'client', 'build', 'index.html'));  
   })
 }
 
-app.get('*', (req, res) => {  
-  res.sendFile(path.join(__dirname+'/client/public/index.html'))
-})
 
-app.listen(process.env.PORT || 3001, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Listening on port ${PORT}`)
 })
