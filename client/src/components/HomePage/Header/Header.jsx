@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 import HeaderLogo from '../../../img/logo-white.svg'
 import './Header.css'
 
@@ -18,7 +18,8 @@ export default function Header(props) {
 
   const handleSelect = (e) => {
     const selection = e.target.innerText
-    history.push(`/breeds/search/${selection}`)
+    const searchString = `breeds/search/${selection}`
+    return <Link to={searchString} />
   } 
 
   const handleSubmit = (e) => {

@@ -55,7 +55,7 @@ export default function SearchResults() {
   return isLoading? <LoadingPage />: isError? <NotFound />: (
     <div className="search-results">
       <Link to="/">
-        <img src={Logo} alt="Cat Wiki Logo. Click to go back to home page" />
+        <Logo />
       </Link>
       <BreedSummary breedInfo={breedInfo} breedName={breedName}/>
       <OtherPhotos photos={photos} breedName={breedName}/>
