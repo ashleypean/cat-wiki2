@@ -117,7 +117,7 @@ ul.names-list li {
   cursor:pointer;
 }
 
-ul.names-list lit a, ul.names-list li a:hover, ul.names-list li a:active, ul.names-list li a:visited {
+ul.names-list a, ul.names-list a:hover, ul.names-list a:active, ul.names-list a:visited {
   text-decoration: none;
   color: black;
 }
