@@ -1,7 +1,7 @@
 import React  from 'react'
 import { Link } from 'react-router-dom' 
 import './MostSearched.css'
-import Arrow from '../../img/read-more-arrow.png'
+import Arrow from '../../../img/read-more-arrow.png'
 
 export default function MostSearched(props) {
 
