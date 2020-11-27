@@ -16,11 +16,11 @@ export default function Header(props) {
  }, [props])
 
 
-  const handleSelect = (e) => {
-    const selection = e.target.innerText
-    const searchString = `breeds/search/${selection}`
-    return <Link to={searchString} />
-  } 
+  // const handleSelect = (e) => {
+  //   const selection = e.target.innerText
+  //   const searchString = `breeds/search/${selection}`
+  //   return <Link to={searchString} />
+  // } 
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -87,7 +87,15 @@ export default function Header(props) {
 
           <div className="names-list hidden">
             <ul className="names-list hidden">
-              {tempNames.map((name, index) => <li key={index} onClick={handleSelect}>{name}</li>)}
+              {tempNames.map((name, index) => {
+                const searchString = `/breeds/search/${name}`
+                return (
+                  <Link to={searchString}>
+                    <li key={index}> {name} </li>
+                  </Link>
+                )
+               }
+              )}
             </ul>
           </div>
         </form>
