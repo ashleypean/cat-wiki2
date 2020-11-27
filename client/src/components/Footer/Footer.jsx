@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-import FooterLogo from '/Users/ashley/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/cat-wiki/src/img/logo-white.svg'
+import FooterLogo from '../../img/logo-white.svg'
 
 export default function Footer() {
   return (

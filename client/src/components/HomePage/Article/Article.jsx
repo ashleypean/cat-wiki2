@@ -1,6 +1,6 @@
 import React from 'react'
 import './Article.css'
-import Arrow from '/Users/ashley/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/cat-wiki/src/img/read-more-arrow.png'
+import Arrow from '../../img/read-more-arrow.png'
 
 export default function Article() {
   return (
