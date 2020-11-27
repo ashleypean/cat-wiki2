@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
-import HeaderLogo from '../../img/logo-white.svg'
+import HeaderLogo from '../../../img/logo-white.svg'
 import './Header.css'
 
 export default function Header(props) {
