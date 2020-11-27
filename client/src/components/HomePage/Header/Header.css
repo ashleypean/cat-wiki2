@@ -97,6 +97,11 @@ ul.names-list {
   height: 90%;
   margin: 1rem 0 0 0;
   padding: 0;
+  overflow-y: scroll;
+}
+
+ul.names-list::-webkit-scrollbar {
+  display: none;
 }
 
 /* Use this to toggle the search dropdown open and closed*/
@@ -120,6 +125,7 @@ ul.names-list li {
 ul.names-list a, ul.names-list a:hover, ul.names-list a:active, ul.names-list a:visited {
   text-decoration: none;
   color: black;
+  width: 100%;
 }
 
 ul.names-list li:hover {
