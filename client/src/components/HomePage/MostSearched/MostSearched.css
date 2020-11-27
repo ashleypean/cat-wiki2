@@ -1,0 +1,158 @@
+div.most-searched {
+  background-color: #E3E1DC;
+  height: auto;
+  max-width: calc(95% - 2rem);
+  border-radius: 0 0 40px 40px;
+  padding: 1rem 1rem 1rem;
+}
+
+div.most-searched h5 {
+  margin: 0 0.5rem;
+  padding: .3rem 0;
+  font-weight: 500;
+}
+
+div.most-searched div.line-break {
+  height: .15rem;
+  width: 3rem;
+  margin: 0 0.5rem;
+  background-color: #4D270C;
+  border: 1px solid #4D270C; 
+  border-radius: 40px;
+}
+
+div.most-searched div.titles {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: auto;
+  margin: .25rem 0.5rem 2rem;
+  padding: 1rem 0 0;
+}
+
+div.most-searched div.titles h3 {
+ display: inline;
+ font-size: .8rem;
+ flex-basis: 55%;
+ margin: 0;
+}
+
+div.most-searched div.titles a {
+  display: inline;
+  font-size: .7rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #4D270C;
+  align-self: flex-end;
+  justify-self: flex-end;
+  flex-basis: 45%;
+  text-align: right;
+  margin: 0 0.5rem 0 0;
+}
+
+div.most-searched div.titles a p {
+  margin: 0;
+}
+
+div.most-searched div.titles p img {
+  vertical-align: middle;
+}
+
+div.most-searched div.article-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-between;
+  height: auto;
+}
+
+div.most-searched div.article-images div {
+  width: 45%;
+  height: 12rem;
+  display: flex;
+  flex-wrap:wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  z-index: 2;
+  position: relative;
+}
+
+div.most-searched div.article-images div a {
+  width: 100%;
+  height: 50%;
+  text-decoration: none;
+  color: #4D270C;
+}
+
+div.most-searched div.article-images div a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+div.most-searched div.article-images div a:hover {
+  text-shadow: 4px 1px 2px rgba(153, 150, 150, 1);
+}
+
+div.most-searched div.article-images p {
+  width: 90%;
+  align-self: auto;
+  margin: 1rem 0 5rem;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+/* Add a yellow backdrop on first image */
+div.most-searched div.article-images div.image-1::before {
+  content: "";
+  background-color: #DEC68B;
+  position: absolute;
+  height: 40%;
+  border-radius: 12px;
+  width: 20%;
+  left: -5%;
+  top: 2%;
+  z-index: -1;
+}
+
+div.most-searched div.article-images div img:hover {
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  transform: scale(1.01)
+}
+
+@media screen and (min-width: 700px) {
+  div.most-searched {
+    max-width: calc(95% + 2rem);
+  }
+
+  div.most-searched h5 {
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 0 2rem;
+  }
+
+  div.most-searched div.line-break {
+    margin: 0 2rem;
+  }
+
+  div.most-searched div.titles {
+    padding: 1.5rem 2rem 2rem;
+    margin: 0;
+  }
+
+  div.most-searched div.titles h3 {
+    font-size: 2.2rem;
+  }
+
+  div.most-searched div.titles a {
+    margin: 0;
+  }
+
+  div.most-searched div.article-images div {
+    width: 20%;
+    height: 18rem;
+  }
+}
+
+

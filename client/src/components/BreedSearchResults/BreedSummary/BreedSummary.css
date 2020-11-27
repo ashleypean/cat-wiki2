@@ -1,0 +1,132 @@
+div.breed-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+}
+
+div.breed-summary div.photo-container {
+  width: 12rem;
+  height: 12rem;
+  position: relative;
+  align-self: center;
+  margin: 0 0 2rem;
+}
+
+div.breed-summary div.photo-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Add yellow border before image */
+div.breed-summary div.photo-container::before {
+  content: "";
+  background-color: #DEC68B;
+  position: absolute;
+  height: 75%;
+  border-radius: 12px;
+  width: 10%;
+  left: -5%;
+  z-index: -1;
+  top: 10%;
+}
+
+div.breed-summary div.text {
+  margin: 0 0 1.4rem 0;
+}
+
+div.breed-summary div.text h4 {
+  font-weight: 550;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Adjust font size of the summary paragraph*/
+div.breed-summary div.text p {
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+div.breed-summary div.stats {
+  margin: 2rem 0;
+}
+
+div.breed-summary div.stats p {
+  font-size: .8rem;
+}
+
+/* Increase boldness of the stats category names*/
+div.breed-summary div.stats span{
+  font-weight: 600;
+}
+
+/* Set the rating div to flexbox to align the rating divs and the text */
+div.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+/* Style the text so it is smaller and has the right boldness set*/
+div.rating span.stat {
+  font-weight: 450;
+  font-size: .6rem;
+  width: 30%;
+}
+
+div.breed-summary div.stats div.rating-container {
+  width: 70%;
+  display: flex;
+}
+
+/* Styling the stat/rating divs*/
+div.breed-summary div.stats div.rating-container div.brown-bg {
+  display: inline-block;
+  height: .45rem; 
+  width: 2rem; 
+  background-color: #544439;
+  border: 1px solid #544439;
+  border-radius: 12px;
+  margin: 0 .2rem;
+}
+
+/* Styling the stat/rating divs*/
+div.breed-summary div.stats div.rating-container div.no-bg {
+  display: inline-block;
+  height: .45rem; 
+  width: 2rem; 
+  background-color: #E0E0E0;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  margin: 0 .2rem;
+}
+
+@media screen and (min-width: 700px) {
+  div.breed-summary {
+    flex-direction: row;
+  }
+
+  div.breed-summary div.photo-container {
+    align-self: flex-start;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  div.breed-summary div.right {
+    width: 60%;
+  }
+
+  div.breed-summary div.right div.text {
+    width: 80%;
+  }
+
+  div.rating {
+    width: 60%;
+  }
+}

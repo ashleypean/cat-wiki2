@@ -1,0 +1,16 @@
+div.loading {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  padding: 25% 0;
+  border-radius: 16px;
+  height: 25%;
+  margin: 0 0 50%;
+}
+
+div.loading h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+

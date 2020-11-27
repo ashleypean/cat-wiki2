@@ -1,0 +1,35 @@
+div.other-photos {
+  height: calc(auto + 12rem);
+}
+
+div.other-photos h3 {
+  font-weight: 500;
+}
+
+div.other-photos div.photos {
+  display: inline-flex;
+  flex-wrap: wrap;
+  height: auto;
+  align-items: space-between;
+  width: 100%;
+}
+
+div.other-photos div.photos img {
+  width: 44%;
+  height: 7rem;
+  object-fit: cover;
+  margin: 5% 2.5%;
+  border-radius: 12px;
+}
+
+@media screen and (min-width: 700px) {
+  div.other-photos div.photos {
+    height: auto;
+  }
+
+  div.other-photos div.photos img {
+    width: 23%;
+    height: 9rem;
+    margin: 1.5% 1%;
+  }
+}
