@@ -90,9 +90,9 @@ export default function Header(props) {
               {tempNames.map((name, index) => {
                 const searchString = `/breeds/search/${name}`
                 return (
-                  <Link to={searchString}>
+                  <a href={searchString}>
                     <li key={index}> {name} </li>
-                  </Link>
+                  </a>
                 )})}
             </ul>
           </div>
