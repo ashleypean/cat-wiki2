@@ -16,7 +16,7 @@ app.use(function(req, res, next) {
 
 
 //TOP 10 PAGE
-app.get('/top-10', async(req, res) => {
+app.get('/api/top-10', async(req, res) => {
   try {
     const fetchString = 'https://api.thecatapi.com/v1/images/search?limit=1&breed_id='
     const ids = ['beng', 'sava', 'norw', 'srex', 'jbob', 'rblu', 'soma','amis', 'mcoo', 'snow']
@@ -46,7 +46,7 @@ app.get('/top-10', async(req, res) => {
 
 //BREED SEARCH RESULTS
 //Get breed info for specific cat that was searched
-app.get('/breeds/search/:name', async(req, res, next) => {
+app.get('/api/breeds/search/:name', async(req, res, next) => {
   try {   
     //Parse the url to get the breedname
     const breedName = req.params.name

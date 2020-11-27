@@ -30,7 +30,7 @@ export default function SearchResults() {
   })
 
   useEffect( () => {
-    fetch(`/breeds/search/${breedName}`)
+    fetch(`/api/breeds/search/${breedName}`)
       .then(res => res.json())
       .then(data => {
         setBreedInfo(data)

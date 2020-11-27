@@ -14,7 +14,7 @@ function Top10() {
   }])
 
   useEffect(() => {
-    fetch('/top-10')
+    fetch('/api/top-10')
       .then(res => res.json())
       .then(data => setTop10(data))
       .then(setTimeout(() => {setIsLoading(false)}, 6000))
